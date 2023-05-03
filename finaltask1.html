@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finals Task 1</title>
+    <link rel="stylesheet" href="finaltask1.css">
+</head>
+<body>
+
+<fieldset>
+
+  <table>
+
+
+    <tr>
+      <td>
+        <h1> CALCULATOR</h1>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        First Number: <input type="text" size="15" id="numwan" placeholder ="Type a value here...">
+      </td>
+    </tr>
+       
+    <tr>
+      <td>
+        Second Number: <input type="text" size="15" id="numtu" placeholder="Type a value here...">
+      </td>
+    </tr>
+       
+    <tr>
+      <td>
+        Result: <input type="text" size="15" placeholder="Result will be..." id="result"> 
+      </td>
+
+    </tr>
+
+    <tr>
+      <td>
+        
+        <button onclick="add()" id="wan"> Addition</button>
+  
+        <button onclick="sub()" id="tu"> Subtraction</button>
+    
+        <button onclick="multi()" id="tri"> Multiply</button>
+  
+        <button onclick="divide()" id="for"> Divide</button>
+
+        <button onclick="clearit()" id="five"> Clear</button>
+  
+        <button onclick="about()" id="six"> About</button>
+ 
+      </td>
+    </tr>
+    
+
+  </table>
+
+
+</fieldset>
+
+
+    <script>
+
+
+function add() 
+    { num1 = document.getElementById("numwan").value;
+      num2 = document.getElementById("numtu").value;
+      sum = parseFloat(num1) + parseFloat(num2);
+      document.getElementById("result").value = sum;
+
+    } 
+
+
+function sub() 
+    { num1 = document.getElementById("numwan").value;
+      num2 = document.getElementById("numtu").value;
+      subtract = parseFloat(num1) - parseFloat(num2);
+      document.getElementById("result").value = subtract;
+
+    }
+
+function multi() 
+    { num1 = document.getElementById("numwan").value;
+      num2 = document.getElementById("numtu").value;
+      multiply = parseFloat(num1) * parseFloat(num2);
+      document.getElementById("result").value = multiply;
+
+    }
+
+function divide() 
+    { num1 = document.getElementById("numwan").value;
+      num2 = document.getElementById("numtu").value;
+      division = parseFloat(num1) / parseFloat(num2);
+      document.getElementById("result").value = division;
+
+    }
+
+    function clearit()
+    { 
+      document.getElementById("numwan").value = "";
+      document.getElementById("numtu").value = "";
+      document.getElementById("result").value = "";
+
+    }
+
+    function about()
+    { 
+      document.getElementById("about").innerHTML = alert ("Stella Maris C. David's Final Task1, CALCULATOR");
+
+    }
+
+
+
+    </script>
+
+
+
+</body>
+</html>
